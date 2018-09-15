@@ -1,10 +1,4 @@
 [[plugins]]
-repo = 'rhysd/clever-f.vim'
-
-[[plugins]]
-repo = 'Lokaltog/vim-easymotion'
-
-[[plugins]]
 repo = 'othree/html5.vim'
 
 [[plugins]]

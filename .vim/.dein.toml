@@ -35,3 +35,10 @@ repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo =  'jistr/vim-nerdtree-tabs'
+
+[[plugins]]
+repo = 'rhysd/clever-f.vim'
+
+[[plugins]]
+repo = 'Lokaltog/vim-easymotion'
+
