@@ -48,6 +48,7 @@ colorscheme monokai
 set guifont=Ricty_Diminished:h10
 set backspace=indent,eol,start
 set background=dark
+set modifiable
 set foldmethod=marker
 set guioptions=
 set hidden
@@ -145,7 +146,7 @@ map <leader><C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 "emmet------------------------------------------
 
-autocmd FileType html,css,scss imap <buffer><expr><tab>
+autocmd FileType html,css,scss,php imap <buffer><expr><tab>
     \ emmet#isExpandable() ? "\<plug>(emmet-expand-abbr)" :
     \ "\<tab>"
 let g:user_emmet_settings = {
@@ -196,3 +197,11 @@ let g:multi_cursor_next_key='<C-w>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
+
+"markdown preview -----------------------------
+noremap <silent> ,md :PrevimOpen
+
+"neosnippet-------------------------------------
+let g:neosnippet#disable_runtime_snippets = {
+      \   '_' : 1,
+      \ }

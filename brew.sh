@@ -67,8 +67,6 @@ brew install wget
 brew install zplug
 brew install zsh
 brew install zsh-completions
-brew install pyenv
-brew install rimraf
 
 brew tap universal-ctags/universal-ctags
 brew cleanup
@@ -80,7 +78,3 @@ chsh -s /usr/local/bin/zsh
 
 # install plugin manager for zsh
 git clone https://github.com/b4b4r07/zplug ~/.zplug
-
-# install anaconda(Python3)
-pyenv install anaconda3-4.0.0
-pyenv global anaconda3-4.0.0

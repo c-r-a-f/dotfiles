@@ -111,6 +111,9 @@ alias rmds='find ./ -name ".DS_Store" -print -exec rm {} ";"'
 alias grepword='(){find ./ -type f -print | xargs grep $1}'
 alias grepreplace="grep -l $1 ./ | xargs perl -i -pe 's/$1/$2/g'"
 alias rimraf='(){rm -r $1}'
+alias dcu='docker-compose build && docker-compose up -d'
+alias drc='docker rm -f `docker ps -a -q`'
+alias dri='docker rmi `docker images -q`'
 
 #functions
 source ~/.zsh.d/z.sh
@@ -155,6 +158,3 @@ export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:./node_modules/.bin
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/bin:$PATH
-eval "$(pyenv init -)"

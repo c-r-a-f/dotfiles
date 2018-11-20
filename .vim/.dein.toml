@@ -42,3 +42,29 @@ repo = 'rhysd/clever-f.vim'
 [[plugins]]
 repo = 'Lokaltog/vim-easymotion'
 
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'LeafCage/yankround.vim'
+
+[[plugins]]
+repo = 'kannokanno/previm'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+repo = 'adelarsq/vim-matchit'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'captbaritone/better-indent-support-for-php-with-html'
