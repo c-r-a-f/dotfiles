@@ -83,6 +83,7 @@ set list
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 set t_Co=256
 set notagbsearch
+set isk-=_
 
 let NERDTreeShowHidden = 1
 let g:nerdtree_tabs_open_on_console_startup = 1
@@ -205,3 +206,4 @@ noremap <silent> ,md :PrevimOpen
 let g:neosnippet#disable_runtime_snippets = {
       \   '_' : 1,
       \ }
+

@@ -68,3 +68,12 @@ repo = 'bronson/vim-trailing-whitespace'
 
 [[plugins]]
 repo = 'captbaritone/better-indent-support-for-php-with-html'
+
+[[plugins]]
+repo = 'evanleck/vim-svelte'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'

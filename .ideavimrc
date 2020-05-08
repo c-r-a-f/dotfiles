@@ -1,3 +1,5 @@
 set clipboard=unnamed,unnamedplus
+set surround
 inoremap jj <Esc>
 vnoremap <silent> <C-p> "0p<CR>
+noremap O o<ESC>

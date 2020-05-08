@@ -114,6 +114,9 @@ alias rimraf='(){rm -r $1}'
 alias dcu='docker-compose build && docker-compose up -d'
 alias drc='docker rm -f `docker ps -a -q`'
 alias dri='docker rmi `docker images -q`'
+alias ydl='youtube-dl $1 -i --extract-audio --audio-format mp3 --audio-quality 0 -U --verbose'
+alias hl='heroku logs --tail -a $1'
+alias blog='cd && cd zatsutabi/content/blog && open .'
 
 #functions
 source ~/.zsh.d/z.sh
@@ -147,6 +150,10 @@ function compare() {
   echo "  brotli size (bytes): $(brotli -c  "$1" | wc -c)"
 }
 
+function http_get_title_of_page {
+  curl -s ${1} | ggrep -oP "(?<=<title>)(.+)(?=</title>)"
+}
+
 #env
 if type nvim >/dev/null 2>&1; then
   export GIT_EDITOR=nvim
@@ -158,3 +165,10 @@ export PATH=$PATH:/usr/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:./node_modules/.bin
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
+
