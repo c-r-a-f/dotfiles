@@ -21,8 +21,8 @@ endif
 let &runtimepath = s:dein_repo_dir .",". &runtimepath
 
 " load plugin and  make cache
-let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/.dein.toml'
-let s:toml_file_lazy = fnamemodify(expand('<sfile>'), ':h').'/.dein_lazy.toml'
+let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/.vim/dein/.dein.toml'
+let s:toml_file_lazy = fnamemodify(expand('<sfile>'), ':h').'/.vim/dein/.dein_lazy.toml'
 
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir, [$MYVIMRC, s:toml_file])

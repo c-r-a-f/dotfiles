@@ -166,9 +166,5 @@ export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:./node_modules/.bin
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"
 
